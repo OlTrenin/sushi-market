@@ -1,0 +1,48 @@
+{
+    "name": "sushi_market",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev --turbopack",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prepare": "husky"
+    },
+    "dependencies": {
+        "@floating-ui/react": "^0.27.2",
+        "@reduxjs/toolkit": "^2.5.0",
+        "axios": "^1.7.8",
+        "dexie": "^4.0.10",
+        "dexie-cloud-addon": "^4.0.8",
+        "dexie-react-hooks": "^1.1.7",
+        "lodash": "^4.17.21",
+        "next": "^15.1.4",
+        "react": "19.0.0-rc-02c0e824-20241028",
+        "react-dadata": "^2.23.1",
+        "react-dom": "19.0.0-rc-02c0e824-20241028",
+        "react-loading-skeleton": "^3.5.0",
+        "react-popper": "^2.3.0",
+        "react-redux": "^9.2.0",
+        "redux-thunk": "^3.1.0"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.6.0",
+        "@commitlint/config-conventional": "^19.6.0",
+        "@next/eslint-plugin-next": "^15.0.4",
+        "@types/lodash": "^4.17.14",
+        "@types/node": "^20",
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18",
+        "eslint": "^8.57.1",
+        "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-next": "15.0.2",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.4.2",
+        "sass": "^1.81.0",
+        "typescript": "^5"
+    }
+}
