@@ -1,0 +1,218 @@
+@import "../../app/styles/globals/media";
+@import "../../app/styles/globals/fonts";
+
+.category {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    width: 100%;
+    overflow-x: hidden;
+
+    @include tablet {
+        width: 100%;
+        padding: 0;
+    }
+
+    &__mainContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding-right: 20px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__list {
+        border-right: 1px solid var(--color-gray);
+        width: 670px;
+
+        @include desktop {
+            width: 54%;
+        }
+
+        @include tablet {
+            width: 80%;
+        }
+
+        @include mobile {
+            width: 70%;
+        }
+
+        ul {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            margin-right: 15px;
+            gap: 10px;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            li {
+                white-space: nowrap;
+                font-size: 14px;
+                &.active {
+                    color: var(--color-accent);
+
+                    @include tablet {
+                        color: var(--color-light);
+                    }
+                }
+
+                @include tablet {
+                    padding: 10px;
+                    background-color: var(--color-light-gray);
+                    color: var(--color-text-light-gray);
+                    border-radius: 50px;
+                    border: none;
+
+                    &.active {
+                        color: var(--color-light);
+                        background-color: var(--color-accent);
+                    }
+                }
+            }
+        }
+    }
+
+    &__options {
+        display: flex;
+        gap: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+
+        @include tablet {
+            display: none;
+            visibility: hidden;
+        }
+    }
+
+    &__line {
+        border-right: 1px solid var(--color-gray);
+    }
+
+    &__delivery {
+        padding-left: 10px;
+        font-size: 14px;
+        & h4 {
+            white-space: nowrap;
+        }
+    }
+
+    &__language {
+        display: flex;
+        & h4 {
+            white-space: nowrap;
+        }
+    }
+
+    &__filters {
+        display: flex;
+        gap: 5px;
+
+        @include tablet {
+            justify-content: space-evenly;
+        }
+
+        & img {
+            object-fit: cover;
+        }
+    }
+
+    &__popoverContent {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-light);
+        border-radius: var(--border-radius);
+        padding: 20px;
+        box-shadow: var(--box-shadow);
+        max-height: 400px;
+        overflow: auto;
+
+        & img:first-child {
+            border-radius: var(--border-radius-small);
+        }
+    }
+
+    &__popover {
+        &button {
+        }
+    }
+
+    &__order {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        font-size: 14px;
+        border-bottom: var(--color-gray) solid 1px;
+        padding: 20px 0px;
+        height: 120px;
+        width: 100%;
+    }
+
+    &__leftContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 14px;
+        align-items: start;
+        width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        & > div {
+            width: 35px;
+            height: 30px;
+            min-width: 100px;
+        }
+
+        & div:last-child > button {
+            padding: 0px 14px;
+        }
+    }
+
+    &__rightContainer {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+
+        & > image {
+            width: 24px;
+            height: 24px;
+        }
+
+        & > button {
+            width: 35px;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__totalPrice {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        padding: 20px 10px;
+    }
+}
+
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

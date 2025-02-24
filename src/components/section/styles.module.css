@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: var(--container-width);
+}
+@media (max-width: 1280px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+@media (max-width: 1023px) {
+    .wrapper {
+        /* Убираем фокус с активных элементов после клика */
+        /* Для ссылок и кнопок при потере фокуса */
+        width: 80%;
+    }
+    .wrapper *:focus {
+        outline: none; /* Убираем обводку, если не нужна */
+    }
+    .wrapper a:active,
+    .wrapper button:active,
+    .wrapper input:active,
+    .wrapper select:active {
+        outline: none;
+        box-shadow: none; /* Убираем возможные тени */
+    }
+    .wrapper a,
+    .wrapper button {
+        outline: none;
+        box-shadow: none;
+    }
+}
+@media (max-width: 767px) {
+    .wrapper {
+        width: 100%;
+        padding: 0px 20px;
+    }
+}
+
+/*# sourceMappingURL=styles.module.css.map */

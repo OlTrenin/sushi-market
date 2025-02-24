@@ -1,0 +1,24 @@
+.orderDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.orderDetails h2 {
+    display: flex;
+    justify-content: end;
+}
+.orderDetails__buttonConainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.orderDetails button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    font-size: 18px;
+}
+
+/*# sourceMappingURL=styles.module.css.map */
